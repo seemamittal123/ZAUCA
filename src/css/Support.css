@@ -1,0 +1,348 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 85px;
+    padding-right: 80px;
+    height: 70px;
+}
+
+.header-logo img {
+    height: 45px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list a {
+    color: #777777;
+    font-size: 14px;
+}
+
+.list li {
+    padding: 0 18px;
+}
+
+.arrow {
+    margin-left: 5px;
+    position: absolute;
+    bottom: 4px;
+}
+
+.selection-btn {
+    position: relative;
+}
+
+
+.btn-box {
+    border-left: 1px solid rgba(0, 0, 0, 0.201);
+}
+
+.btn-box a {
+    background-color: #0e5077;
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 33px;
+}
+
+.menu-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 83px;
+    background-color: #0e5077;
+    height: 37px;
+    font-size: 15px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-wraper a {
+    color: white;
+}
+
+.menu-wraper li {
+    padding: 16px;
+    position: relative;
+}
+
+.menu-arrow {
+    margin-left: 10px;
+    position: absolute;
+    bottom: 18px;
+}
+
+.main-box-inner-wraper {
+    padding: 25px 85px;
+}
+
+.heading {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.201);
+    color: #0e5177cb;
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+}
+
+.other-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.other-list a {
+    color: #777777;
+    font-size: 11.5px;
+}
+
+.information-wraper {
+    margin-top: 40px;
+}
+
+input,
+select {
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.062);
+    padding: 9px;
+    height: 15px;
+    margin-bottom: 23px;
+    border: 1px solid #77777773;
+}
+
+.box-wraper {
+    display: flex;
+
+}
+
+.box p {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.name {
+    width: 270px;
+}
+
+.box {
+    margin-right: 35px;
+}
+
+.email {
+    width: 330px;
+}
+
+.subject {
+    width: 750px;
+}
+select{
+    height: 35px;
+    color: #777777;
+}
+#inputPriority{
+    width: 210px;
+}
+.note-pad-header{
+    width: 98.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.196); 
+    border-bottom: none;
+    padding: 6px 10px;
+}
+.facility-section{
+    display: flex;
+}
+.note-pad button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 4px; 
+    border: 1px solid rgba(0, 0, 0, 0.196); 
+}
+.button-box{
+    margin-right: 9px;
+}
+.note-pad textarea{
+    width: 100%;
+    height: 310px;
+    border: 1px solid rgba(0, 0, 0, 0.149);
+    border-bottom: none;
+}
+.preview-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    width: 80px;
+    height: 28px;   
+    background-color:  #337ab7;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.preview-btn i{
+    font-size: 16px;
+}
+.line-words-cal{
+    width: 100.5%;
+    height: 30px;
+    background-color: #7777772a;
+    margin-bottom: 20px;
+}

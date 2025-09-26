@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support page</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/Support.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-logo">
+            <img src="src/images/zauca-website-design.png" alt="">
+        </div>
+        <div class="navigation-bar">
+            <ul class="list" type="none">
+                <li><a href="#" class="selection-btn">english <i class="fa fa-sort-desc arrow"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">register</a></li>
+                <li class="btn-box"><a href="#">View Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-wraper">
+        <ul class="menu-list" type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store <i class="fa fa-sort-desc menu-arrow" aria-hidden="true"></i></a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Knowledgebase</a></li>
+            <li><a href="#"> Network Status</a></li>
+            <li><a href="#"> Contact Us</a></li>
+        </ul>
+        <ul class="account-btn" type="none">
+            <li><a href="#"> Account <i class="fa fa-sort-desc menu-arrow" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="main-box">
+        <div class="container">
+            <div class="main-box-inner-wraper">
+                <p class="heading">Open Ticket</p>
+                <ul class="other-list">
+                    <li><a href="#">Portal Home </a></li>
+                    <li><a href="#">Client Area </a></li>
+                    <li><a href="#"> Support Tickets</a></li>
+                    <li><a href="#"> Submit Ticket</a></li>
+                </ul>
+                <div class="information-wraper">
+                    <div class="box-wraper">
+                        <div class="box">
+                            <p>Name</p>
+                            <input type="text" class="name">
+                        </div>
+                        <div class="box">
+                            <p>Email Address</p>
+                            <input type="email" class="email">
+                        </div>
+                    </div>
+                    <div class="box-wraper">
+                        <div class="box">
+                            <p>Subject</p>
+                            <input type="text" class="subject">
+                        </div>
+                    </div>
+                    <div class="box-wraper">
+                        <div class="box">
+                            <p> Department</p>
+                            <select name="deptid" id="inputDepartment" class="form-control"
+                                onchange="refreshCustomFields(this)">
+                                <option value="1" selected="selected"> General Enquiries </option>
+                                <option value="2"> Hosting Issue </option>
+                                <option value="3"> Email Creation </option>
+                                <option value="4"> Email Issue </option>
+                                <option value="5"> Domain </option>
+                                <option value="6"> Pre Sales </option>
+                                <option value="7"> Design &amp; Development Issue </option>
+                                <option value="8"> Billing </option>
+                                <option value="9"> Escalation - Sales </option>
+                                <option value="10"> Escalation - Support </option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <p>Priority</p>
+                            <select name="urgency" id="inputPriority" class="form-control">
+                                <option value="High"> High </option>
+                                <option value="Medium" selected="selected"> Medium </option>
+                                <option value="Low"> Low </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>Message</p>
+                        <div class="note-pad">
+                            <div class="note-pad-header">
+                                <div class="facility-section">
+                                    <div class="button-box">
+                                        <button><i class="fa fa-bold" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-italic" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-header" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="button-box">
+                                        <button><i class="fa fa-link" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="button-box">
+                                        <button><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-list" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-terminal" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-comment" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div>
+                                        <div class="preview-btn"><i class="fa fa-search" aria-hidden="true"></i>
+                                            Preview</div>
+                                    </div>
+                                    <div class="button-box">
+                                        <button><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <div class="screen">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <textarea name="" id=""></textarea>
+                            <div class="line-words-cal"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="attachment">
+                            <p>Attechment</p>
+                            <button class="attachment-box">
+                                <button> Choose file</button>
+                                <p>No file choose</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
